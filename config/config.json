@@ -1,0 +1,16 @@
+{
+  "theme": {
+      "slug": "austintatious",
+      "name": "Austintatious Design",
+      "author": "Daniel Bisett",
+      "PHPNamespace": "WP_Rig\\WP_Rig"
+    },
+    "dev": {
+      "browserSync": {
+        "live": true,
+        "proxyURL": "austintatious:8888",
+        "bypassPort": "8188",
+        "https": false
+      }
+}
+}
