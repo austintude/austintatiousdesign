@@ -1,0 +1,8 @@
+.block1 {
+ & .sectionHeader {
+	border-bottom: 1px solid #333;
+	width: fit-content;
+	margin-left: 5rem;
+	margin-bottom: 3rem;
+ }
+}

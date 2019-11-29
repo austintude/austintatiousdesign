@@ -1,0 +1,28 @@
+.aSide {
+	display: none;
+}
+@media (--content-query) {
+	.aSide {
+		display: grid;
+	grid-area: aSide;
+	box-shadow: 5px 0 5px -5px rgba(0, 0, 0, .4);
+	position: sticky;
+		top: 7rem;
+
+	& li {
+		font-family: sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		list-style: none;
+		line-height: 2.5rem;
+
+		& a {
+			text-decoration: none;
+		}
+	}
+	& .asideBlock {
+		/* position: sticky;
+		top: 7rem; */
+	}
+}
+}

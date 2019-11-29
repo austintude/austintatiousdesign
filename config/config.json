@@ -9,7 +9,7 @@
       "browserSync": {
         "live": true,
         "proxyURL": "austintatious:8888",
-        "bypassPort": "8188",
+        "bypassPort": "8191",
         "https": false
       }
 }
