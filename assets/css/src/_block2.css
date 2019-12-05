@@ -2,8 +2,16 @@
 	& .sectionHeader {
 		border-bottom: 1px solid #333;
 		width: fit-content;
-		margin-left: 5rem;
 		margin-bottom: 3rem;
 	 }
+	 & .sectionCard p:before {
+		content: '“';
+		color: #333;
+		font-weight: 600;
+		left: -0.5em;
+		top: -0.25em;
+		line-height: 1;
+		font-size: 3rem;
+	}
 
 }

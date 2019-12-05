@@ -10,6 +10,7 @@
  */
 
 namespace WP_Rig\WP_Rig;
+$tagline			= get_field('tagline');
 
 ?>
 <!doctype html>
@@ -42,9 +43,12 @@ namespace WP_Rig\WP_Rig;
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<?php get_template_part( 'template-parts/header/custom_header' ); ?>
-
 		<?php get_template_part( 'template-parts/header/custom-page-branding' ); ?>
-
+		<h1 class="site-title">
+			<?php the_title(); ?>
+		</h1>
+		<h2 class="tagline">
+		<?php echo $tagline; ?>
+		</h2>
 		<?php get_template_part( 'template-parts/header/navigation' ); ?>
 	</header><!-- #masthead -->

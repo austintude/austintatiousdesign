@@ -31,12 +31,15 @@ if ( is_home() ) {
 					get_template_part( 'template-parts/content/block1' );
 					get_template_part( 'template-parts/content/block2' );
 					get_template_part( 'template-parts/content/block3' );
-					get_template_part( 'template-parts/content/homeTestimonialQuotes' );
-					get_template_part( 'template-parts/content/ctaBlock' );
+					get_template_part( 'template-parts/content/block4' );
 				?>
 			</div><!-- . blockLayout -->
-		</div><!-- end .blockWrapper -->
 
+
+		</div><!-- end .blockWrapper -->
+		<?php
+					get_template_part( 'template-parts/content/contentMiddleBlock2' );
+			?>
 	</main><!-- #primary -->
 <?php
 get_footer();

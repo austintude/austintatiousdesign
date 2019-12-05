@@ -34,7 +34,7 @@
 		background: rgba(0,0,0,.6);
 		padding: 1.7rem;
 		color: #f7f7f7;
-		
+
 
 		& #phoneIcon,
 		& #mapIcon,
@@ -92,7 +92,7 @@
 		}
 
 		& #phone {
-			grid-area: phone;
+			/* grid-area: phone; */
 		}
 
 		& #subscribe {
@@ -167,7 +167,7 @@
 		}
 
 		& #phone {
-			grid-area: phone;
+			/* grid-area: phone; */
 		}
 
 		& #subscribe {
@@ -279,7 +279,7 @@
 		}
 }
 
-@media (--narrow-portrait-menu-query) { 
+@media (--narrow-portrait-menu-query) {
     #ctaBlock {
 		display: flex;
 		padding: 3.7rem 0.3rem 2.7rem;
@@ -330,7 +330,7 @@
 				margin-top: 0;
 				margin-left: 1rem;
             }
-            
+
             & a {
 				text-decoration: none;
 				color: #f7f7f7;
@@ -352,7 +352,7 @@
 		& #envelopeIcon amp-img {
 			max-width: 1.5rem;
 		}
-		
+
 		& #findUs,
 		& #phone {
 			border-right: .5px solid;

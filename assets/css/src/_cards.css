@@ -1,9 +1,9 @@
-.sectionCardsBlock {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	grid-gap: 1rem;
-	margin: auto 5vw;
 
+	.sectionCardsBlock {
+	display: grid;
+	grid-gap: 1rem;
+	margin: auto 2vw auto auto;
+	width: 96vw;
 	& .sectionCard {
 		text-align: left;
 		font-weight: 300;
@@ -22,4 +22,10 @@
 			font-size: 1.1rem;
 		}
 	}
+	@media (--content-query) {
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		margin: auto 5vw;
+		width: 65vw;
+	}
 }
+

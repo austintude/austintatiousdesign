@@ -41,6 +41,7 @@
 @import "_portfolio-child-template.css";
 @import "_ctaBlock.css";
 @import "_contact-template.css";
+@import "__contentmiddleblock2.css";
 @import "_supports.css";
 
 
@@ -90,7 +91,7 @@
 # Layouts
 --------------------------------------------------------------*/
 .site {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	max-width: 100%;
 }
 
@@ -290,14 +291,14 @@ select {
 	display: none;
 }
 
-@media (--narrow-menu-query) {
+
 
 	.nav--toggle-small.nav--toggled-on .menu {
 		display: block;
 	}
-}
 
-@media (--wide-menu-query) {
+
+@media (--content-query) {
 
 	.nav--toggle-small .menu-toggle {
 		display: none;
@@ -403,7 +404,7 @@ select {
 	display: block;
 	margin: 0 auto 2em;
 	padding: 0 1em;
-	max-width: var(--content-width);
+	/* max-width: var(--content-width); */
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 }
@@ -444,7 +445,7 @@ select {
 	padding-left: 1em;
 }
 
-@media (--wide-menu-query) {
+@media (--content-query) {
 
 	.main-navigation ul li a {
 		padding: 0.4em 0.5em;
@@ -597,10 +598,14 @@ select {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 1em 0 0;
-	padding: 2em 0;
+	margin: 0 0 0;
+	padding: 0 0;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	@media (--content-query) {
+		margin: 1em 0 0;
+		padding: 2em 0;
+	}
 }
 
 .site-info {
