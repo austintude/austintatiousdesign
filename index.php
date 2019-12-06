@@ -14,12 +14,18 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header();
+get_header('custom-blog');
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
 	<main id="primary" class="site-main">
+	<div class="blockWrapper">
+			<div class="aSide">
+				<?php
+				get_sidebar();
+?></div>
+<div class="blockLayout">
 		<?php
 		if ( have_posts() ) {
 
@@ -38,7 +44,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			get_template_part( 'template-parts/content/error' );
 		}
 		?>
+		</div>
+	</div>
 	</main><!-- #primary -->
 <?php
-get_sidebar();
-get_footer();
+get_footer('blog');

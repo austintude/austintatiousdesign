@@ -6,6 +6,22 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas:
 		"aSide blockLayout blockLayout blockLayout";
+		& aside#secondary {
+			margin: auto 3vw;
+			grid-gap: 3rem;
+			}
+	}
+}
+
+
+
+.blockWrapperBlog {
+	display: grid;
+	margin-bottom: 3rem;
+	@media (--content-query) {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"aSideBlog blockLayoutBlog blockLayoutBlog blockLayoutBlog blockLayoutBlog";
 	}
 }
 .site {
@@ -143,6 +159,10 @@ section {
 	}
 	& a{
     color: hsl(0, 6%, 7%);;
+}
+& ul ul li {
+	padding-left: 1em;
+	font-size: 0.7rem;
 }
 @media (--content-query) {
 	top: 0;
@@ -566,7 +586,8 @@ justify-self: center;
 		/* margin-top: -5rem; */
 		& a,
 		& a:visited {
-			color: #f7f7f7;
+			color: #333;
+    font-weight: 700;
 		}
 	}
 }

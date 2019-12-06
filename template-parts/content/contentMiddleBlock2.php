@@ -10,6 +10,7 @@ namespace WP_Rig\WP_Rig;
 $block5_cta_text	= get_field('block5_cta_text');
 $block5_cta_url	= get_field('block5_cta_url');
 $cta_block_title	= get_field('cta_block_title');
+$cta_loading_image	= get_field('cta_loading_image');
 
 ?>
 	<div class="contentMiddleBlock2">

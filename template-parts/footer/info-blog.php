@@ -45,28 +45,49 @@ namespace WP_Rig\WP_Rig;
         <div id="address">
             <address property="address" typeof="PostalAddress">
 			<h5>Austintatious Design</h5>
-			<h5><span property="streetAddress"><?php echo $contact_us_street; ?>
+			<h5><span property="streetAddress">
+				<!-- <?php echo $contact_us_street; ?> -->
+				431 Box Canyon Rd.
 		<br>
-		<?php echo $contact_us_street_suite; ?></span>
+		<!-- <?php echo $contact_us_street_suite; ?> -->
+		Suite B
+	</span>
             <br>
-            <span property="addressLocality"><?php echo $contact_us_city; ?></span>,
+            <span property="addressLocality">
+				<!-- <?php echo $contact_us_city; ?> -->
+				Wimberley,
+			</span>
 
-			<span property="addressRegion"><?php echo $contact_us_state; ?></span> <?php echo $contact_us_zip; ?></h5>
+			<span property="addressRegion">
+				<!-- <?php echo $contact_us_state; ?> -->
+				Texas
+			</span>
+			<!-- <?php echo $contact_us_zip; ?> -->
+			78676
+		</h5>
 </address>
         </div>
 </section>
 <div id="phone">
-			<span property="telephone"><a href="tel:<?php echo $contact_us_phone_link; ?>"><?php echo $contact_us_phone; ?></a></span>
+			<span property="telephone"><a href="tel:4698502946">
+				<!-- <?php echo $contact_us_phone; ?> -->
+				(469) 850-2946
+			</a></span>
 		</div>
 <div id="hours">
 	<h4>Hours of Operation</h4>
 			<ul>
 				<li>
-				<time itemprop="openingHours" datetime="<?php echo $contact_us_open_datetime; ?>"><?php echo $contact_us_open_days_times; ?></time>
+				<time itemprop="openingHours" datetime="Mo - Sa 8:00-19:00">
+					<!-- <?php echo $contact_us_open_days_times; ?> -->
+					Monday - Saturday 8:00am - 7:00pm
+				</time>
 				</li>
 
 				<li>
-				 <?php echo $contact_us_closed; ?> - Closed
+				 <!-- <?php echo $contact_us_closed; ?> -->
+				 Sunday
+				  - Closed
 				</li>
 			</ul>
 
@@ -90,7 +111,7 @@ namespace WP_Rig\WP_Rig;
 
 	<div id="themeSocial">
 		<div id="socialIcon1">
-			<a href="<?php echo $facebook_link; ?>" rel="noopener" target="_blank">
+			<a href="https://fb.me/austintude" rel="noopener" target="_blank">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/facebook-icon.png"
 				width="1"
@@ -101,7 +122,7 @@ namespace WP_Rig\WP_Rig;
 </a>
 		</div>
 		<div id="socialIcon2">
-		<a href="<?php echo $instagram_link; ?>" rel="noopener" target="_blank">
+		<a href="https://instagram.com/austintude" rel="noopener" target="_blank">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/instagram-icon.png"
 				width="1"
@@ -112,7 +133,7 @@ namespace WP_Rig\WP_Rig;
 </a>
 		</div>
 		<div id="socialIcon3">
-		<a href="<?php echo $linkedin_link; ?>" rel="noopener" target="_blank">
+		<a href="https://linkedin.com/in/austintude" rel="noopener" target="_blank">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/linkedin-icon.png"
 				width="1"
@@ -130,31 +151,24 @@ namespace WP_Rig\WP_Rig;
 		<h4><?php bloginfo( 'name' ); ?></h4>
 </div>
 <div class="blockImages">
-		<?php while (have_rows('middle_images')) : the_row();
 
-// vars
-$middle_image_1 = get_sub_field('middle_image_1');
-$middle_image_1_alt = get_sub_field('middle_image_1_alt');
-$middle_image_2 = get_sub_field('middle_image_2');
-$middle_image_2_alt = get_sub_field('middle_image_2_alt');
-?>
 		<amp-img
-		src="<?php echo $middle_image_1; ?>"
+		src="../../wp-content/uploads/2019/12/bing-ads-cert.jpg"
   width="640"
 			height="640"
 			layout="intrinsic"
 			lightbox
-			alt="<?php echo $middle_image_1_alt; ?>">
+			alt="Bing Cert">
 		</amp-img>
 		<amp-img
-		src="<?php echo $middle_image_2; ?>"
+		src="../../wp-content/uploads/2019/12/adwords-search-marketing-cert.jpg"
   width="640"
 			height="640"
 			layout="intrinsic"
 			lightbox
-			alt="<?php echo $middle_image_2_alt; ?>">
+			alt="Google Ads Cert">
 		</amp-img>
-		<?php endwhile; ?>
+
 </div>
 </div>
 <div class="rightBlock">
@@ -162,31 +176,24 @@ $middle_image_2_alt = get_sub_field('middle_image_2_alt');
 		<h4>Sharing Your Passion!</h4>
 </div>
 <div class="blockImages">
-<?php while (have_rows('right_images')) : the_row();
 
-// vars
-$right_image_1 = get_sub_field('right_image_1');
-$right_image_1_alt = get_sub_field('right_image_1_alt');
-$right_image_2 = get_sub_field('right_image_2');
-$right_image_2_alt = get_sub_field('right_image_2_alt');
-?>
 		<amp-img
-		src="<?php echo $right_image_1; ?>"
+		src="../../wp-content/uploads/2019/12/LAustin-Translation-Digital-Marketing-scaled.jpg"
   width="2500"
 			height="8100"
 			layout="intrinsic"
 			lightbox
-			alt="<?php echo $right_image_1_alt; ?>">
+			alt="Onsite and Offsite SEO">
 		</amp-img>
 		<amp-img
-		src="<?php echo $right_image_2; ?>"
+		src="../../wp-content/uploads/2019/12/danielbisett-resume-scaled.jpg"
   width="2500"
 			height="8100"
 			layout="intrinsic"
 			lightbox
-			alt="<?php echo $right_image_2_alt; ?>">
+			alt="Daniel Bisett CV">
 		</amp-img>
-		<?php endwhile; ?>
+
 </div>
 </div>
 

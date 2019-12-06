@@ -1,3 +1,6 @@
 .blockLayout {
 	grid-area: blockLayout;
 }
+.blockLayoutBlog {
+	grid-area: blockLayoutBlog;
+}

@@ -7,8 +7,6 @@
 
 namespace WP_Rig\WP_Rig;
 
-$tagline			= get_field('tagline');
-
 ?>
 
 <div class="site-branding">
@@ -16,14 +14,10 @@ $tagline			= get_field('tagline');
 	&nbsp;
 </div>
 <?php the_custom_logo(); ?>
-
 <div class="titleTagWrapper">
 	<h1 class="site-title">
-		<?php the_title(); ?>
+		The Austintatious Blog
 	</h1>
-	<h2 class="tagline">
-	<?php echo $tagline; ?>
-	</h2>
 </div>
 
 </div><!-- .site-branding -->

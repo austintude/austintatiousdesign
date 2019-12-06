@@ -1,8 +1,22 @@
 .page-template-custom-page-template {
+	& .mobileiFrame {
+		@media (--content-query) {
+			display: none;
+		}
+	}
+	& .desktopiFrame {
+		display: none;
+		@media (--content-query) {
+			display: block;
+		}
+	}
     & .site {
         justify-content: flex-start;
         grid-gap: 0;
 		/* color: #fff; */
+	}
+	& .titleTagWrapper {
+		margin-top: 0rem;
 	}
 	& .site-title {
 		font-size: 2.3rem;
