@@ -90,7 +90,7 @@ namespace WP_Rig\WP_Rig;
 
 	<div id="themeSocial">
 		<div id="socialIcon1">
-			<a href="<?php echo $facebook_link; ?>" rel="noopener" target="_blank">
+			<a href="<?php echo $facebook_link; ?>" rel="noopener" target="_blank" alt="facebook link">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/facebook-icon.png"
 				width="1"
@@ -101,7 +101,7 @@ namespace WP_Rig\WP_Rig;
 </a>
 		</div>
 		<div id="socialIcon2">
-		<a href="<?php echo $instagram_link; ?>" rel="noopener" target="_blank">
+		<a href="<?php echo $instagram_link; ?>" rel="noopener" target="_blank" alt="twitter link">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/instagram-icon.png"
 				width="1"
@@ -112,7 +112,7 @@ namespace WP_Rig\WP_Rig;
 </a>
 		</div>
 		<div id="socialIcon3">
-		<a href="<?php echo $linkedin_link; ?>" rel="noopener" target="_blank">
+		<a href="<?php echo $linkedin_link; ?>" rel="noopener" target="_blank" alt="linkedin link">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/linkedin-icon.png"
 				width="1"

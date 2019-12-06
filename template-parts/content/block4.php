@@ -17,12 +17,12 @@ namespace WP_Rig\WP_Rig;
 					</div>
 </div>
                     <div class="sectionCardsBlock">
-                        <div class="sectionCard" id="phone">
-                            <h3 class="mb1" id="phone">Call Us<i class=""></i></h3>
+                        <div class="sectionCard" id="phone-card">
+                            <h3 class="mb1" id="phone-text">Call Us<i class=""></i></h3>
                             <p class="mb1">Click the button below to open your phone app.</p>
                             <a href="tel:4698502946" class="my0 mx-auto">
-                                <amp-img src="https://austintatiousdesign.co/svg/telephone.png" width="80" height="80"
-                                    class="" layout="fixed" id="phoneIcon2"></amp-img>
+                                <amp-img src="<?php echo get_template_directory_uri() ?>/assets/images/telephone.png" width="80" height="80"
+                                    class="" layout="fixed" id="phoneIcon2" alt="icon of a phone to click to call"></amp-img>
 
                             </a>
                             <div class="abe-sample-card-actions mx-auto"><a
@@ -50,7 +50,7 @@ namespace WP_Rig\WP_Rig;
 
                         <div class="sectionCard" id="instagram">
                             <h3>Instagram</h3>
-                            <amp-instagram data-shortcode="BUhCqSCDtPP" width="320" height="492" layout="responsive">
+                            <amp-instagram data-shortcode="BUhCqSCDtPP" width="320" height="492" layout="responsive" alt="instagram">
                             </amp-instagram>
                         </div>
                     </div>
