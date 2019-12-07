@@ -36,7 +36,7 @@ $tagline			= get_field('tagline');
 
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager -->
-<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-TMC5NRG&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
+<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NQRF8CC&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
