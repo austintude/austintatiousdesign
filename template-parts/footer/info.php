@@ -89,8 +89,8 @@ namespace WP_Rig\WP_Rig;
 </div>
 
 	<div id="themeSocial">
-		<div id="socialIcon1">
-			<a href="<?php echo $facebook_link; ?>" rel="noopener" alt="facebook link">
+		<div id="socialIcon1" aria-label="facebook link icon">
+			<a href="<?php echo $facebook_link; ?>" aria-label="facebook link" alt="facebook link">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/facebook-icon.png"
 				width="1"
@@ -100,8 +100,8 @@ namespace WP_Rig\WP_Rig;
 			</amp-img>
 </a>
 		</div>
-		<div id="socialIcon2">
-		<a href="<?php echo $instagram_link; ?>" rel="noopener" alt="twitter link">
+		<div id="socialIcon2" aria-label="twitter link icon">
+		<a href="<?php echo $instagram_link; ?>" aria-label="twitter link" alt="twitter link">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/instagram-icon.png"
 				width="1"
@@ -111,8 +111,8 @@ namespace WP_Rig\WP_Rig;
 			</amp-img>
 </a>
 		</div>
-		<div id="socialIcon3">
-		<a href="<?php echo $linkedin_link; ?>" rel="noopener" alt="linkedin link">
+		<div id="socialIcon3" aria-label="linkedin link icon">
+		<a href="<?php echo $linkedin_link; ?>" aria-label="linkedin link" alt="linkedin link">
 			<amp-img
 				src="<?php echo get_template_directory_uri() ?>/assets/images/linkedin-icon.png"
 				width="1"
