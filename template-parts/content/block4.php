@@ -20,9 +20,9 @@ namespace WP_Rig\WP_Rig;
                         <div class="sectionCard" id="phone-card">
                             <h3 class="mb1" id="phone-text">Call Us<i class=""></i></h3>
                             <p class="mb1">Click the button below to open your phone app.</p>
-                            <a href="tel:4698502946" class="my0 mx-auto">
+                            <a href="tel:4698502946" class="my0 mx-auto" aria-label="telephone link">
                                 <amp-img src="<?php echo get_template_directory_uri() ?>/assets/images/telephone.png" width="80" height="80"
-                                    class="" layout="fixed" id="phoneIcon2" alt="icon of a phone to click to call"></amp-img>
+                                    class="" aria-label="telephone icon" layout="fixed" id="phoneIcon2" alt="icon of a phone to click to call"></amp-img>
 
                             </a>
                             <div class="abe-sample-card-actions mx-auto"><a

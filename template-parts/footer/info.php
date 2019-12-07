@@ -193,7 +193,7 @@ $right_image_2_alt = get_sub_field('right_image_2_alt');
 </div>
 <div class="baseBlock">
 
-<div id="themeLogo">
+<div id="themeLogo" aria-label="custom logo link">
 <?php the_custom_logo(); ?>
 </div>
 <div class="builtBy">
