@@ -376,14 +376,22 @@ figcaption {
 
 /* start of mods */
 .custom-logo {
-	width: 5em;
+	/* width: 5em;
 	top: 0.8em;
 	position: fixed;
 	left: 1.3em;
-	z-index: 6;
+	z-index: 6; */
+	width: 46vw;
+    top: 0;
+    position: fixed;
+    left: 25vw;
+    z-index: 6;
+    background: rgba(255,255,255,.7);
+    padding: .5rem 2rem;
 }
 footer .custom-logo {
 	left: 0;
+	background: transparent;
 }
 
 .nav--toggle-small .menu-toggle {
@@ -391,15 +399,29 @@ footer .custom-logo {
 	top: 0.5em;
 	right: 0.6em;
 	z-index: 6;
-	display: none;
+	/* display: none; */
+	width: 5rem;
+}
+
+.nav--toggle-small .menu-toggle.menuTop {
+	position: absolute;
+	top: -1rem;
+}
+.nav--toggle-small .menu-toggle.menuBottom {
+	top: auto;
+	bottom: 0;
 }
 
 .main-navigation.nav--toggled-on {
 	top: 3em;
 	right: 0;
 	position: fixed;
-	background: rgba(255, 255, 255, 0.7);
+	background: rgba(255, 255, 255, 0.9);
 	z-index: 6;
+
+	& .menuTop {
+		top: -4.4rem;
+	}
 }
 
 #mobileTopBar {
