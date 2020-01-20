@@ -435,16 +435,14 @@ footer .custom-logo {
 }
 
 #mobileTopBar {
-	display: none;
-	@media (--content-query) {
 		display: block;
 	height: 3.55rem;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100vw;
-	background: #f7f7f7;
+	background: #fff;
 	z-index: 5;
-	}
+
 }
 
 #carouselHero,
