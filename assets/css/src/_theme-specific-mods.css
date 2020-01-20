@@ -410,6 +410,7 @@ footer .custom-logo {
 .nav--toggle-small .menu-toggle.menuTop {
 	position: absolute;
 	top: -1rem;
+	clear: both;
 }
 .nav--toggle-small .menu-toggle.menuBottom {
 	top: auto;
@@ -417,14 +418,16 @@ footer .custom-logo {
 }
 
 .main-navigation.nav--toggled-on {
-	top: 3em;
+	top: 4em;
 	right: 0;
 	position: fixed;
 	background: rgba(255, 255, 255, 0.9);
 	z-index: 6;
 
-	& .menuTop {
-		top: -4.4rem;
+	& .menu-toggle.menuTop {
+		top: -5.4rem;
+		clear: both;
+
 	}
 }
 
