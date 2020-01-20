@@ -207,37 +207,4 @@ $right_image_2_alt = get_sub_field('right_image_2_alt');
 </div>
 
 </div><!-- .site-info -->
-<?php $menuloop = new \WP_Query( array( 'post_type' => 'menuicon', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 
-<?php while( $menuloop->have_posts() ) : $menuloop->the_post();
-$menu_icon	= get_field('menu_icon');
-?>
-	<!-- <button class="menu-toggle menuTop" aria-label="<?php esc_attr_e( 'Open menu', 'wp-rig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
-		<?php
-		if ( wp_rig()->is_amp() ) {
-			?>
-			on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
-			[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'"
-			<?php
-		}
-		?>
-	>
-
-		<img amp-fx="parallax" data-parallax-factor="0.001" src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>">
-
-	</button> -->
-	<button class="menu-toggle menuBottom" aria-label="<?php esc_attr_e( 'Open menu', 'wp-rig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
-		<?php
-		if ( wp_rig()->is_amp() ) {
-			?>
-			on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
-			[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'"
-			<?php
-		}
-		?>
-	>
-
-		<img src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>">
-
-	</button>
-	<?php endwhile;  wp_reset_query(); ?>
