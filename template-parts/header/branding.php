@@ -11,9 +11,9 @@ $hero_images	= get_field('hero_images');
 ?>
 
 <div class="site-branding">
-	<!-- <div id="mobileTopBar">
+	<div id="mobileTopBar">
 	&nbsp;
-</div> -->
+</div>
 <?php the_custom_logo(); ?>
 <div class="titleTagWrapper">
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>

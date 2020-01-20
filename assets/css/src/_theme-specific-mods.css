@@ -153,7 +153,7 @@ section {
 }
 
 .main-navigation {
-	width: 70vw;
+	width: 75vw;
 	& .menu {
 		/* padding-left: 17vw; */
 	}
@@ -376,18 +376,22 @@ figcaption {
 
 /* start of mods */
 .custom-logo {
-	/* width: 5em;
-	top: 0.8em;
-	position: fixed;
-	left: 1.3em;
-	z-index: 6; */
+
 	width: 46vw;
     top: 0;
     position: fixed;
     left: 25vw;
     z-index: 6;
     background: rgba(255,255,255,.7);
-    padding: .5rem 2rem;
+	padding: .5rem 2rem;
+	@media (--content-query) {
+	width: 5em;
+	top: 0.8em;
+	position: fixed;
+	left: 1.3em;
+	z-index: 6;
+	background: transparent;
+	}
 }
 footer .custom-logo {
 	left: 0;
@@ -425,12 +429,16 @@ footer .custom-logo {
 }
 
 #mobileTopBar {
+	display: none;
+	@media (--content-query) {
+		display: block;
 	height: 3.55rem;
 	position: fixed;
 	top: 0;
 	width: 100vw;
 	background: #f7f7f7;
 	z-index: 5;
+	}
 }
 
 #carouselHero,
