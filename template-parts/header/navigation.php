@@ -55,7 +55,7 @@ $menu_icon	= get_field('menu_icon');
 		<img amp-fx="parallax" data-parallax-factor="0.001" src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>">
 
 	</button>
-	<button class="menu-toggle menuBottom" aria-label="<?php esc_attr_e( 'Open menu', 'wp-rig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
+	<!-- <button class="menu-toggle menuBottom" aria-label="<?php esc_attr_e( 'Open menu', 'wp-rig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
 		<?php
 		if ( wp_rig()->is_amp() ) {
 			?>
@@ -68,7 +68,7 @@ $menu_icon	= get_field('menu_icon');
 
 		<img src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>">
 
-	</button>
+	</button> -->
 	<?php endwhile;  wp_reset_query(); ?>
 
 	<div class="primary-menu-container">

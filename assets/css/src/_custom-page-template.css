@@ -87,5 +87,6 @@
 		color: #fff;
 		-webkit-clip-path: polygon(100% 100%,100% 0,-400% 0);
 		clip-path: polygon(100% 100%,100% 0,-400% 0);
+		height:38rem;
 	}
 }

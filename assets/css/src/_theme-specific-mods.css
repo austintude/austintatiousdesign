@@ -398,23 +398,26 @@ footer .custom-logo {
 	background: transparent;
 }
 
-.nav--toggle-small .menu-toggle {
+.menu-toggle {
 	position: fixed;
 	top: 0.5em;
 	right: 0.6em;
 	z-index: 6;
 	/* display: none; */
 	width: 5rem;
+	background: transparent;
+	border: 0;
 }
 
-.nav--toggle-small .menu-toggle.menuTop {
+.menu-toggle.menuTop {
 	position: absolute;
 	top: -1rem;
 	clear: both;
 }
-.nav--toggle-small .menu-toggle.menuBottom {
+.menu-toggle.menuBottom {
 	top: auto;
 	bottom: 0;
+	width: 4.4rem;
 }
 
 .main-navigation.nav--toggled-on {
