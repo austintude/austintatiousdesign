@@ -138,22 +138,14 @@ $middle_image_1_alt = get_sub_field('middle_image_1_alt');
 $middle_image_2 = get_sub_field('middle_image_2');
 $middle_image_2_alt = get_sub_field('middle_image_2_alt');
 ?>
-		<amp-img
+		<img
 		src="<?php echo $middle_image_1; ?>"
-  width="640"
-			height="640"
-			layout="intrinsic"
 			lightbox
-			alt="<?php echo $middle_image_1_alt; ?>">
-		</amp-img>
-		<amp-img
+			alt="<?php echo $middle_image_1_alt; ?>"/>
+		<img
 		src="<?php echo $middle_image_2; ?>"
-  width="640"
-			height="640"
-			layout="intrinsic"
 			lightbox
-			alt="<?php echo $middle_image_2_alt; ?>">
-		</amp-img>
+			alt="<?php echo $middle_image_2_alt; ?>"/>
 		<?php endwhile; ?>
 </div>
 </div>
@@ -170,22 +162,16 @@ $right_image_1_alt = get_sub_field('right_image_1_alt');
 $right_image_2 = get_sub_field('right_image_2');
 $right_image_2_alt = get_sub_field('right_image_2_alt');
 ?>
-		<amp-img
+		<img
 		src="<?php echo $right_image_1; ?>"
-  width="2500"
-			height="8100"
-			layout="intrinsic"
+
 			lightbox
-			alt="<?php echo $right_image_1_alt; ?>">
-		</amp-img>
-		<amp-img
+			alt="<?php echo $right_image_1_alt; ?>"/>
+		<img
 		src="<?php echo $right_image_2; ?>"
-  width="2500"
-			height="8100"
-			layout="intrinsic"
+
 			lightbox
-			alt="<?php echo $right_image_2_alt; ?>">
-		</amp-img>
+			alt="<?php echo $right_image_2_alt; ?>"/>
 		<?php endwhile; ?>
 </div>
 </div>

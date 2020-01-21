@@ -66,7 +66,8 @@ $menu_icon	= get_field('menu_icon');
 		?>
 	>
 
-		<img src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>">
+		<!-- <img src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>"> -->
+		<?php esc_html_e( 'Menu', 'wp-rig' ); ?>
 
 	</button>
 	<?php endwhile;  wp_reset_query(); ?>
