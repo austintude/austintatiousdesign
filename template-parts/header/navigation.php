@@ -14,7 +14,7 @@ if ( ! wp_rig()->is_primary_nav_menu_active() ) {
 ?>
 
 
-<nav id="site-navigation" class="main-navigation nav--toggle-sub nav--toggle-small" aria-label="<?php esc_attr_e( 'Main menu', 'wp-rig' ); ?>"
+<nav id="site-navigation" tabindex="0" class="main-navigation nav--toggle-sub nav--toggle-small" aria-label="<?php esc_attr_e( 'Main menu', 'wp-rig' ); ?>"
 	<?php
 	if ( wp_rig()->is_amp() ) {
 		?>
@@ -73,6 +73,10 @@ $menu_icon	= get_field('menu_icon');
 	<?php endwhile;  wp_reset_query(); ?>
 
 	<div class="primary-menu-container">
+		<div class="closeX" on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
+			[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'" >
+			X
+		</div>
 		<?php wp_rig()->display_primary_nav_menu( [ 'menu_id' => 'primary-menu' ] ); ?>
 	</div>
 </nav><!-- #site-navigation -->

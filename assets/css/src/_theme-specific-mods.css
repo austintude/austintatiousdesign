@@ -55,7 +55,8 @@
 	margin-right: auto;
 	font-weight: 300;
 	font-size: 1.5rem;
-    text-shadow: 2px 2px #333;
+	text-shadow: 2px 2px #333;
+	text-align: center;
 	@media (--content-query) {
 		width: 50%;
 	margin-left: 25%;
@@ -161,9 +162,15 @@ section {
 	& a{
     color: hsl(0, 6%, 7%);;
 }
-& ul ul li {
+& ul {
+	& li {
+		font-size: 1.5rem;
+    line-height: 1.3rem;
+	}
+	& ul li {
 	padding-left: 1em;
-	font-size: 0.7rem;
+	font-size: 1rem;
+}
 }
 @media (--content-query) {
 	top: 0;
@@ -388,8 +395,8 @@ figcaption {
 /* start of mods */
 .custom-logo {
 
-	width: 46vw;
-    bottom: 0.5rem;
+	width: 35vw;
+    bottom: 1rem;
     position: fixed;
     left: 5vw;
     z-index: 6;
@@ -435,18 +442,30 @@ footer .custom-logo {
 	bottom: 0.5rem;
 	width: 5.4rem;
 }
-
+.closeX {
+    display: none;
+}
 .main-navigation.nav--toggled-on {
-	top: 4em;
+	/* top: 4em; */
+	top: 0;
 	right: 0;
 	position: fixed;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 1);
 	z-index: 6;
-
+    width: 100vw;
+    height: 90vh;
+    padding: 7vh 20vw 0vh 20vw;
 	& .menu-toggle.menuTop {
 		top: -5.4rem;
 		clear: both;
 
+	}
+
+	& .closeX {
+		display: block;
+		position: absolute;
+		top: 2rem;
+		right: 3rem;
 	}
 }
 
