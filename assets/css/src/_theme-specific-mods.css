@@ -399,7 +399,7 @@ figcaption {
     bottom: 1rem;
     position: fixed;
     left: 5vw;
-    z-index: 6;
+    z-index: 10;
     background: rgba(255,255,255,.8);
 	padding: .5rem 2rem;
 	border-radius: 5rem;
@@ -454,7 +454,7 @@ footer .custom-logo {
 	z-index: 6;
     width: 100vw;
     height: 90vh;
-    padding: 7vh 20vw 0vh 20vw;
+    padding: 10vh 20vw 0vh 20vw;
 	& .menu-toggle.menuTop {
 		top: -5.4rem;
 		clear: both;
@@ -464,8 +464,10 @@ footer .custom-logo {
 	& .closeX {
 		display: block;
 		position: absolute;
-		top: 2rem;
+		top: 10vh;
 		right: 3rem;
+		z-index: 10;
+		color: #000;
 	}
 }
 

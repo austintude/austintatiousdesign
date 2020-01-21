@@ -73,10 +73,10 @@ $menu_icon	= get_field('menu_icon');
 	<?php endwhile;  wp_reset_query(); ?>
 
 	<div class="primary-menu-container">
-		<div class="closeX" on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
+		<div class="closeX" role="button" tabindex="10" on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
 			[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'" >
 			X
-		</div>
+	</div>
 		<?php wp_rig()->display_primary_nav_menu( [ 'menu_id' => 'primary-menu' ] ); ?>
 	</div>
 </nav><!-- #site-navigation -->
