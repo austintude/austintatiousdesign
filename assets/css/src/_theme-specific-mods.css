@@ -456,7 +456,7 @@ footer .custom-logo {
 	z-index: 6;
     width: 100vw;
     height: 90vh;
-    padding: 10vh 20vw 0vh 20vw;
+    padding: 7vh 20vw 0vh 20vw;
 	& .menu-toggle.menuTop {
 		top: -5.4rem;
 		clear: both;
