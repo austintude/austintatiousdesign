@@ -36,25 +36,8 @@ if ( ! wp_rig()->is_primary_nav_menu_active() ) {
 		<?php
 	}
 	?>
-<?php $menuloop = new \WP_Query( array( 'post_type' => 'menuicon', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 
-<?php while( $menuloop->have_posts() ) : $menuloop->the_post();
-$menu_icon	= get_field('menu_icon');
-?>
-	<!-- <button class="menu-toggle menuTop" aria-label="<?php esc_attr_e( 'Open menu', 'wp-rig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
-		<?php
-		if ( wp_rig()->is_amp() ) {
-			?>
-			on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
-			[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'"
-			<?php
-		}
-		?>
-	>
 
-		<img amp-fx="parallax" data-parallax-factor="0.001" src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>">
-
-	</button> -->
 	<button class="menu-toggle menuBottom" aria-label="<?php esc_attr_e( 'Open menu', 'wp-rig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
 		<?php
 		if ( wp_rig()->is_amp() ) {
@@ -66,11 +49,12 @@ $menu_icon	= get_field('menu_icon');
 		?>
 	>
 
-		<!-- <img src="<?php echo $menu_icon['url']; ?>" alt="<?php echo $menu_icon['alt']; ?>"> -->
 		<?php esc_html_e( 'Menu', 'wp-rig' ); ?>
 
 	</button>
-	<?php endwhile;  wp_reset_query(); ?>
+
+
+
 
 	<div class="primary-menu-container">
 		<div class="closeX" role="button" tabindex="10" on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
