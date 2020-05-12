@@ -668,3 +668,7 @@ justify-self: center;
 		}
 	}
 }
+
+amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img {
+    object-fit: cover;
+}

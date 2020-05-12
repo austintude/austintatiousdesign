@@ -8,8 +8,8 @@
     "dev": {
       "browserSync": {
         "live": true,
-        "proxyURL": "austintatious:8888",
-        "bypassPort": "8191",
+        "proxyURL": "austintatious.local",
+        "bypassPort": "8181",
         "https": false
       }
 }
