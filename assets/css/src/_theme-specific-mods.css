@@ -78,9 +78,9 @@ position: relative;
 	@media (--sidebar-query) {
 		margin-top: -27rem;
 	}
-	/* @media (--ipad-landscape-plus-menu-query) {
-		margin-top: -31rem;
-	} */
+	@media (--ipad-landscape-plus-menu-query-max) {
+		margin-top: -21rem;
+	}
 	& .site-branding .site-title {
 		top: 3rem;
 		width: 90%;
