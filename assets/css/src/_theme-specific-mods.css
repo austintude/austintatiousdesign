@@ -78,9 +78,9 @@ position: relative;
 	@media (--sidebar-query) {
 		margin-top: -27rem;
 	}
-	@media (--ipad-landscape-plus-menu-query) {
+	/* @media (--ipad-landscape-plus-menu-query) {
 		margin-top: -31rem;
-	}
+	} */
 	& .site-branding .site-title {
 		top: 3rem;
 		width: 90%;
@@ -519,9 +519,9 @@ amp-carousel,
 		@media (--sidebar-query) {
 			font-size: 4rem;
 		}
-		@media (--ipad-landscape-plus-menu-query) {
+		/* @media (--ipad-landscape-plus-menu-query) {
 			font-size: 5rem;
-		}
+		} */
 
 	}
 }
