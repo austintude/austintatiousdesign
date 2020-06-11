@@ -43,7 +43,7 @@ $tagline			= get_field('tagline');
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
 
 	<header id="masthead" class="site-header">
-
+	<?php get_template_part( 'template-parts/header/custom_header' ); ?>
 		<?php get_template_part( 'template-parts/header/custom-page-branding' ); ?>
 
 
