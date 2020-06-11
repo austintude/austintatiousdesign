@@ -72,15 +72,16 @@ position: relative;
     margin-top: -12rem;
     text-align: left;
 	width: 100vw;
+	/* @media (--ipad-landscape-plus-menu-query-max) {
+		margin-top: -12rem;
+	} */
 	@media (--content-query) {
 		margin-top: -18rem;
 	}
 	@media (--sidebar-query) {
 		margin-top: -27rem;
 	}
-	@media (--ipad-landscape-plus-menu-query-max) {
-		margin-top: -12rem;
-	}
+
 	& .site-branding .site-title {
 		top: 3rem;
 		width: 90%;

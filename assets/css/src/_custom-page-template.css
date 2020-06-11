@@ -15,7 +15,7 @@
         grid-gap: 0;
 		/* color: #fff; */
 	}
-	& .titleTagWrapper {
+	/* & .titleTagWrapper {
 		margin-top: -12rem;
 	}
 	& .site-title {
@@ -23,7 +23,7 @@
 	}
 	& .tagline {
 		font-size: 1.45rem;
-	}
+	} */
     & main {
         top: 0;
         width: 80vw;
