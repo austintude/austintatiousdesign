@@ -122,13 +122,15 @@ $block2_sectioncards	= get_field('block2_sectioncards');
 					</div>
 </div>
                     <div class="sectionCardsBlock">
-					<?php while (have_rows('block2_sectioncards')) : the_row();
-						//vars
-						$sectioncard_id	= get_sub_field('sectioncard_id');
-						$sectioncard_author	= get_sub_field('sectioncard_author');
-						$sectioncard_content	= get_sub_field('sectioncard_content');
-						$sectioncard_company	= get_sub_field('sectioncard_company');
-					?>
+					<?php $testimonialsloop = new \WP_Query( array( 'post_type' => 'testimonials', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
+
+<?php while( $testimonialsloop->have_posts() ) : $testimonialsloop->the_post();
+$sectioncard_id	= get_field('sectioncard_id');
+$sectioncard_title	= get_field('sectioncard_title');
+$sectioncard_content	= get_field('sectioncard_content');
+$sectioncard_company	= get_field('sectioncard_company');
+$sectioncard_img	= get_field('sectioncard_img');
+			?>
 
                         <div class="sectionCard" id="<?php echo $sectioncard_id; ?>">
                             <span itemprop="review" itemscope itemtype="http://schema.org/Review">
@@ -137,11 +139,12 @@ $block2_sectioncards	= get_field('block2_sectioncards');
                                     <p class="mb1"><?php echo $sectioncard_content; ?></p>
                                 </span>
 
-                                <small><span itemprop="author" itemscope itemtype="http://schema.org/Person"><?php echo $sectioncard_author; ?></span>, <cite title="Source Title"><?php echo $sectioncard_company; ?></cite></small>
+                                <small><span itemprop="author" itemscope itemtype="http://schema.org/Person"><?php echo $sectioncard_title; ?></span>, <cite title="Source Title"><?php echo $sectioncard_company; ?></cite></small>
+								<br>
 								<span class="rating" itemprop="reviewRating" itemscope
                                     itemtype="http://schema.org/Rating">
-                                    <amp-img src="<?php echo get_template_directory_uri() ?>/assets/images/five-star-rating.png" width="208" height="40" class=""
-                                        layout="fixed" alt="5 stars for Austintatious Design Co"></amp-img>
+                                    <img src="<?php echo $sectioncard_img['url']; ?>" width="208" height="40" class=""
+                                        layout="fixed" alt="<?php echo $sectioncard_img['alt']; ?> for Austintatious Design Co">
 
                                 <br>
                                 <span itemprop="ratingValue">5</span> / <span itemprop="bestRating">5</span>
@@ -149,7 +152,7 @@ $block2_sectioncards	= get_field('block2_sectioncards');
 								</span>
                             </span>
 						</div>
-						<?php endwhile; ?>
+						<?php endwhile;  wp_reset_query(); ?>
 </div>
 <span itemprop="aggregateRating"
     itemscope itemtype="http://schema.org/AggregateRating" nodisplay>

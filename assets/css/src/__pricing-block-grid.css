@@ -1,0 +1,39 @@
+
+@supports (grid-area:auto){
+		.pricingBlock {
+		display: grid;
+		margin-left: auto;
+		margin-right: auto;
+		@media (--content-query) {
+		width: 90%;
+		}
+		& .sectionCardsBlock {
+			@media (--content-query) {
+			grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+			margin: auto 5vw;
+			width: auto;
+			}
+			& .sectionTitle {
+				min-height: 3rem;
+			}
+		}
+			& .priceTable {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr;
+				min-height: 7.5rem;
+				justify-items: stretch;
+				align-items: center;
+				padding: .3rem;
+				@media (--content-query) {
+					min-height: 4.5rem;
+				}
+				& .rightCell {
+					text-align: right;
+				}
+			}
+			& .priceTable:nth-child(2n) {
+				background: rgba(0,0,0,.1);
+			}
+	}
+}

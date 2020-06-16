@@ -30,6 +30,8 @@
 @import "_block2.css";
 @import "_block3.css";
 @import "_block4.css";
+@import "_pricing-block.css";
+@import "__pricing-block-grid.css";
 @import "_cards.css";
 @import "_blockLayout.css";
 @import "_aSide.css";

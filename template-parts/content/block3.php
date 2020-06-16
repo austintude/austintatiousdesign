@@ -19,14 +19,15 @@ $block3_sectioncards	= get_field('block3_sectioncards');
 					</div>
 </div>
                     <div class="sectionCardsBlock">
-					<?php while (have_rows('block3_sectioncards')) : the_row();
-						//vars
-						$sectioncard_id	= get_sub_field('sectioncard_id');
-						$sectioncard_title	= get_sub_field('sectioncard_title');
-						$sectioncard_services	= get_sub_field('sectioncard_services');
-						$sectioncard_img	= get_sub_field('sectioncard_img');
-						$sectioncard_link	= get_sub_field('sectioncard_link');
-					?>
+					<?php $portfolioloop = new \WP_Query( array( 'post_type' => 'portfolio', 'orderby' => 'post_id', 'order' => 'DSC' ) ); ?>
+
+<?php while( $portfolioloop->have_posts() ) : $portfolioloop->the_post();
+$sectioncard_id	= get_field('sectioncard_id');
+$sectioncard_title	= get_field('sectioncard_title');
+$sectioncard_services	= get_field('sectioncard_services');
+$sectioncard_company	= get_field('sectioncard_company');
+$sectioncard_img	= get_field('sectioncard_img');
+			?>
 
                             <div class="sectionCard" id="<?php echo $sectioncard_id; ?>">
                                     <h3 class=""><?php echo $sectioncard_title; ?></h3>
@@ -39,10 +40,10 @@ $block3_sectioncards	= get_field('block3_sectioncards');
                                             <ul class="">
 												<?php while (have_rows('sectioncard_services')) : the_row();
 													//vars
-													$sectioncard_service	= get_sub_field('sectioncard_service');
+													$sectioncard_service_provided	= get_sub_field('sectioncard_service_provided');
 												?>
                                                		<li class="">
-														   <?php echo $sectioncard_service; ?>
+														   <?php echo $sectioncard_service_provided; ?>
 													</li>
 												<?php endwhile; ?>
                                             </ul>
@@ -55,7 +56,7 @@ $block3_sectioncards	= get_field('block3_sectioncards');
                                             class="ampstart-btn caps text-decoration-none inline-block"
                                             href="<?php echo $sectioncard_link; ?>">See it live</a></div>
 								</div>
-								<?php endwhile; ?>
+								<?php endwhile;  wp_reset_query(); ?>
 
                     </div>
                 </section>

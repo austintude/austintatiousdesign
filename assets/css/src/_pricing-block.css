@@ -1,0 +1,8 @@
+.pricingBlock {
+ & .sectionHeader {
+	border-bottom: 1px solid #333;
+	width: fit-content;
+	margin-bottom: 3rem;
+ }
+
+}
