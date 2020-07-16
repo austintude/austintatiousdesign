@@ -33,6 +33,7 @@
 @import "_pricing-block.css";
 @import "__pricing-block-grid.css";
 @import "_cards.css";
+@import "_blocksub1.css";
 @import "_blockLayout.css";
 @import "_aSide.css";
 @import "_testimonials-template.css";
@@ -42,6 +43,7 @@
 @import "_custom-page-template.css";
 @import "_portfolio-child-template.css";
 @import "_ctaBlock.css";
+@import "_ctaHero.css";
 @import "_contact-template.css";
 @import "__contentmiddleblock2.css";
 @import "_supports.css";

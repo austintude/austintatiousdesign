@@ -50,7 +50,7 @@ namespace WP_Rig\WP_Rig;
 
                         <div class="sectionCard" id="instagram">
                             <h3>Instagram</h3>
-                            <amp-instagram data-shortcode="BUhCqSCDtPP" width="320" height="492" layout="responsive" alt="instagram">
+                            <amp-instagram data-shortcode="BUhCqSCDtPP" width="320" height="492" layout="intrinsic" alt="instagram">
                             </amp-instagram>
                         </div>
                     </div>

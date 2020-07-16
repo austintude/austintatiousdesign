@@ -16,6 +16,8 @@ $block1_phone_txt	= get_field('block1_phone_txt');
 ?>
 <aside class="asideBlock">
 	<ul class="asideUl">
+	<li class="asideListItem"><a href="#accomplishments"
+				option="" role="option" aria-selected="false" tabindex="0">In The News</a></li>
 		<li class="asideListItem"><a href="#services"
 				option="" role="option" aria-selected="false" tabindex="0">Services</a></li>
 		<li class="asideListItem"><a href="#testimonials"

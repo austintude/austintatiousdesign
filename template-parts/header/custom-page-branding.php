@@ -24,6 +24,9 @@ $tagline			= get_field('tagline');
 	<h2 class="tagline">
 	<?php echo $tagline; ?>
 	</h2>
+	<?php
+					get_template_part( 'template-parts/content/ctaHero' );
+			?>
 </div>
 
 </div><!-- .site-branding -->

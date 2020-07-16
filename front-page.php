@@ -20,6 +20,7 @@ if ( is_home() ) {
 
 ?>
 	<main id="primary" class="site-main">
+
 		<div class="blockWrapper">
 			<div class="aSide">
 				<?php
@@ -28,6 +29,7 @@ if ( is_home() ) {
 			</div><!-- .sideBar -->
 			<div class="blockLayout">
 				<?php
+					get_template_part( 'template-parts/content/blocksub1' );
 					get_template_part( 'template-parts/content/block1' );
 					get_template_part( 'template-parts/content/block2' );
 					get_template_part( 'template-parts/content/block3' );

@@ -14,21 +14,21 @@ namespace WP_Rig\WP_Rig;
 	&nbsp;
 </div>
 <?php the_custom_logo(); ?>
-<div id="carouselHero" amp-fx="parallax" data-parallax-factor="1.2">
-	
+<div id="carouselHero" amp-fx="parallax" data-parallax-factor="2.2">
+
 	<div>
-	
-		<?php 
+
+		<?php
 		$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
 		?>
-		<!-- <amp-img 
+		<!-- <amp-img
   src="<?php echo $featured_img_url; ?>"
   width="640"
 			height="480"
 			layout="responsive"
 			alt="<?php the_title(); ?>">
 		</amp-img> -->
-		<amp-img 
+		<amp-img
 		media="(max-width: 48.5em) and (max-height:23em)"
   src="<?php echo $featured_img_url; ?>"
   width="640"
@@ -36,7 +36,7 @@ namespace WP_Rig\WP_Rig;
 			layout="responsive"
 			alt="<?php the_title(); ?>">
 		</amp-img>
-		<amp-img 
+		<amp-img
 		media="(max-width: 48.5em) and (min-height:23em)"
   src="<?php echo $featured_img_url; ?>"
   width="640"
@@ -44,7 +44,7 @@ namespace WP_Rig\WP_Rig;
 			layout="responsive"
 			alt="<?php the_title(); ?>">
 		</amp-img>
-		<amp-img 
+		<amp-img
 		media="(min-width: 48.6em)"
   src="<?php echo $featured_img_url; ?>"
   width="640"
@@ -53,9 +53,12 @@ namespace WP_Rig\WP_Rig;
 			alt="<?php the_title(); ?>">
 		</amp-img>
 	<!-- .post-thumbnail -->
-	
+
 	</div>
 </div> <!-- end #carouselHero -->
-	
+
 		<p class="site-title"><?php the_title(); ?></p>
+		<?php
+					get_template_part( 'template-parts/content/ctaHero' );
+			?>
 </div><!-- .site-branding -->

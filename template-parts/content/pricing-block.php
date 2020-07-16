@@ -29,7 +29,7 @@ $service_desc	= get_field('service_desc');
 			?>
 
                             <div class="sectionCard" id="<?php echo $sectioncard_id; ?>">
-                                    <h2 class="sectionTitle"><amp-fit-text><?php echo $service_title; ?></amp-fit-text></h2>
+                                    <h2 class="sectionTitle"><?php echo $service_title; ?></h2>
 
 
 
@@ -40,14 +40,10 @@ $service_desc	= get_field('service_desc');
 												?>
 													<div class="priceTable">
 														<div class="leftCell">
-														<amp-fit-text>
 															<?php echo $service_level_title; ?>
-															</amp-fit-text>
 														</div>
 														<div class="rightCell">
-														<amp-fit-text>
 															<?php echo $service_level_price; ?>
-															</amp-fit-text>
 														</div>
 													</div>
 												<?php endwhile; ?>

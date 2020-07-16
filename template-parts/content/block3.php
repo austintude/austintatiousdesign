@@ -27,6 +27,7 @@ $sectioncard_title	= get_field('sectioncard_title');
 $sectioncard_services	= get_field('sectioncard_services');
 $sectioncard_company	= get_field('sectioncard_company');
 $sectioncard_img	= get_field('sectioncard_img');
+$sectioncard_link	= get_field('sectioncard_link');
 			?>
 
                             <div class="sectionCard" id="<?php echo $sectioncard_id; ?>">

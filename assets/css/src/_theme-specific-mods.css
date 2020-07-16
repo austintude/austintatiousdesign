@@ -67,19 +67,23 @@
 		text-align: center;
 	}
 }
+amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img {
+    object-fit: cover;
+}
 .titleTagWrapper {
 position: relative;
-    margin-top: -12rem;
+    margin-top: -14rem;
     text-align: left;
 	width: 100vw;
-	/* @media (--ipad-landscape-plus-menu-query-max) {
-		margin-top: -12rem;
-	} */
+
 	@media (--content-query) {
 		margin-top: -18rem;
 	}
 	@media (--sidebar-query) {
-		margin-top: -27rem;
+		margin-top: -32rem;
+	}
+	@media (--ipad-landscape-plus-menu-query-max) {
+		margin-top: -22rem;
 	}
 
 	& .site-branding .site-title {
@@ -160,29 +164,43 @@ section {
 		}
 	}
 }
+.ctaButton:hover {
+    background: #711eaf;
+	& a,
+	& a:hover {
+		color: #ffffff;
+		}
+	}
+
 
 .main-navigation {
 	width: 75vw;
 	& .menu {
 		/* padding-left: 17vw; */
 	}
-	& a{
-    color: hsl(0, 6%, 7%);;
+	& a {
+    color: hsl(0, 6%, 7%);
 }
+
 & ul {
 	& li {
 		font-size: 1.2rem;
 	line-height: 1.2rem;
 	font-weight: 700;
+
 	}
 	& ul li {
 	padding-left: 1em;
 	font-size: 1rem;
 	font-weight: 400;
+	& a:hover {
+		color: #ffffff;
+		background-color: #711eaf;
+	}
 }
 }
 @media (--content-query) {
-	top: 0;
+	top: 0.8rem;
     position: fixed;
     z-index: 6;
 	right: 3rem;
@@ -404,7 +422,7 @@ figcaption {
 /* start of mods */
 .custom-logo {
 
-	width: 35vw;
+	width: 25vw;
     bottom: 1rem;
     position: fixed;
     left: 5vw;

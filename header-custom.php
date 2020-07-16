@@ -18,6 +18,7 @@ $tagline			= get_field('tagline');
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://cdn.ampproject.org">
 	<!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -35,9 +36,65 @@ $tagline			= get_field('tagline');
 </head>
 
 <body <?php body_class(); ?>>
-<!-- Google Tag Manager -->
-<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NQRF8CC&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
+<!-- Begin "Facebook Pixel for AMP" || Help center -->
+<!-- Insert in Settings->HTML/CSS->Body -->
+<!-- IN:20200120-09-3 -->
+<amp-analytics type="facebookpixel" id="facebook-pixel">
+<script type="application/json">
+{
+    "vars": {
+        "pixelId": "570168077230923"
+    },
+    "triggers": {
+        "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+        },
+        "formSubmit": {
+            "on": "amp-form-submit-success",
+            "request": "event",
+            "vars": {
+            "eventName": "form-submission"
+            }
+        },
+        "buttonClick1": {
+        "selector":".ctaButton",
+            "on": "click",
+            "request": "event",
+            "vars": {
+            "eventName": "Learn More X button click"
+            }
+		},
+		"buttonClick2": {
+        "selector":".asideListItem",
+            "on": "click",
+            "request": "event",
+            "vars": {
+            "eventName": "List Item in Aside ServicesTestimonialsPortfolioFindUs button click"
+            }
+        },
+		"buttonClick3": {
+        "selector":".btn-lg",
+            "on": "click",
+            "request": "event",
+            "vars": {
+            "eventName": "lets do this button click"
+            }
+        },
+		"buttonClick4": {
+        "selector":".amp-wp-enforced-sizes",
+            "on": "click",
+            "request": "event",
+            "vars": {
+            "eventName": "Footer image click"
+            }
+        }
+    }
+}
+</script>
+</amp-analytics>
+<!-- End "Facebook Pixel for AMP" || Help center -->
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>

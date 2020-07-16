@@ -18,6 +18,9 @@ $hero_images	= get_field('hero_images');
 <div class="titleTagWrapper">
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 		<h2 class="tagline"><?php bloginfo( 'description' ); ?></h2>
+		<?php
+					get_template_part( 'template-parts/content/ctaHero' );
+			?>
 </div>
 
 </div><!-- .site-branding -->

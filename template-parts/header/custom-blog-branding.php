@@ -18,6 +18,9 @@ namespace WP_Rig\WP_Rig;
 	<h1 class="site-title">
 		The Austintatious Blog
 	</h1>
+	<?php
+					get_template_part( 'template-parts/content/ctaHero' );
+			?>
 </div>
 
 </div><!-- .site-branding -->
