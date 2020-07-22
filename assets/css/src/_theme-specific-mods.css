@@ -71,11 +71,10 @@ amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img {
     object-fit: cover;
 }
 .titleTagWrapper {
-position: relative;
-    margin-top: -14rem;
-    text-align: left;
+	position: relative;
+	text-align: left;
 	width: 100vw;
-
+	margin-top: -14rem;
 	@media (--content-query) {
 		margin-top: -18rem;
 	}
@@ -85,7 +84,9 @@ position: relative;
 	@media (--ipad-landscape-plus-menu-query-max) {
 		margin-top: -22rem;
 	}
-
+	@media (--narrow-portrait-menu-query) {
+		margin-top: -14rem;
+	}
 	& .site-branding .site-title {
 		top: 3rem;
 		width: 90%;
@@ -207,7 +208,7 @@ section {
 }
 }
 .lightbox {
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.9);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -558,8 +559,9 @@ amp-carousel,
 }
 
 main {
-	top:-8rem;
+	top:-4rem;
 	position: relative;
+	z-index: 2;
 }
 #subscribe {
 	display: flex;
