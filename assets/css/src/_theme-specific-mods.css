@@ -74,7 +74,7 @@ amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img {
 	position: relative;
 	text-align: left;
 	width: 100vw;
-	margin-top: -14rem;
+	margin-top: -12rem;
 	@media (--content-query) {
 		margin-top: -18rem;
 	}

@@ -64,3 +64,84 @@ require get_template_directory() . '/inc/functions.php';
 
 // Initialize the theme.
 call_user_func( 'WP_Rig\WP_Rig\wp_rig' );
+
+/**
+ * Setup suggested plugin system.
+ *
+ * Include the Austintatious_Design_Plugin_Manager class and add
+ * an interface for users to to manage suggested
+ * plugins.
+ *
+ * @since x.x.x
+ *
+ * @see  Austintatious_Design_Plugin_Manager
+ * @link http://mypluginmanager.com
+ */
+function austintatious_plugin_manager() {
+
+	if ( ! is_admin() ) {
+		return;
+	}
+
+	/**
+	 * Include plugin manager class.
+	 *
+	 * No other includes are needed. The Austintatious_Design_Plugin_Manager
+	 * class will handle including any other files needed.
+	 *
+	 * If you want to move the "plugin-manager" directory to
+	 * a different location within your theme, that's totally
+	 * fine; just make sure you adjust this include path to
+	 * the plugin manager class accordingly.
+	 */
+	require_once( get_parent_theme_file_path( '/plugin-manager/class-austintatious-design-plugin-manager.php' ) );
+
+	/*
+	 * Setup suggested plugins.
+	 *
+	 * It's a good idea to have a filter applied to this so your
+	 * loyal users running child themes have a way to easily modify
+	 * which plugins show as suggested for the site they're setting
+	 * up for a client.
+	 */
+	$plugins = apply_filters( 'austintatious_plugins', array(
+		array(
+			'name'    => 'Advanced Custom Fields Pro',
+			'slug'    => 'advanced-custom-fields-pro',
+			'version' => '5.8+',
+			'url'     => 'http://www.gravityforms.com', // Only for non wp.org plugins.
+		),
+		array(
+			'name'    => 'AMP',
+			'slug'    => 'amp',
+			'version' => '1.5+',
+			'url'     => 'http://www.gravityforms.com', // Only for non wp.org plugins.
+		),
+		array(
+			'name'    => 'Custom Post Type UI',
+			'slug'    => 'custom-post-type-ui',
+			'version' => '1.7+',
+			'url'     => 'http://www.gravityforms.com', // Only for non wp.org plugins.
+		),
+	));
+
+	/*
+	 * Setup optional arguments for plugin manager interface.
+	 *
+	 * See the set_args() method of the Austintatious_Design_Plugin_Manager
+	 * class for full documentation on what you can pass in here.
+	 */
+	$args = array(
+		'page_title' => __( 'Required Plugins', 'austintatious' ),
+		'menu_slug'  => 'austintatious-required-plugins',
+	);
+
+	/*
+	 * Create plugin manager object, passing in the required
+	 * plugins and optional arguments.
+	 */
+	$manager = new Austintatious_Design_Plugin_Manager( $plugins, $args );
+
+}
+add_action( 'after_setup_theme', 'austintatious_plugin_manager' );
+
